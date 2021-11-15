@@ -1,5 +1,5 @@
 import "./App.css";
-import { siteTitle, heroHeaderContent, heroContent, categories, headerControls } from "./data";
+import { siteTitle, heroHeaderContent, heroContent, categories, headerControls, userDetails } from "./data";
 import Category from "./components/Category";
 import Hero from "./components/Hero";
 
@@ -12,6 +12,7 @@ const App = () => {
         siteTitle={siteTitle}
         heroContent={heroContent}
         headerControls={headerControls}
+        userDetails={userDetails}
       />
       <main>
         {categories.map((category, index) => (

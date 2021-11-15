@@ -101,7 +101,7 @@ const heroContent = {
 };
 
 // TODO: This should probably be in `state`
-const userData = {
+const userDetails = {
   url: "https://developer.mozilla.org",
   username: "S",
 }
@@ -135,7 +135,7 @@ export {
   wines,
   heroHeaderContent,
   heroContent,
-  userData,
+  userDetails,
   categories,
   headerControls,
 };

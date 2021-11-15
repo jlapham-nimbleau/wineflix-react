@@ -1,5 +1,5 @@
-const UserAvatar = ({ user }) => {
-  const { url, username } = user;
+const UserAvatar = ({ userDetails }) => {
+  const { url, username } = userDetails;
 
   return (
     <span className="user-avatar">

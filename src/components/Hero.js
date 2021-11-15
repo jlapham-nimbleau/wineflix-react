@@ -2,7 +2,7 @@ import HeroContent from "./HeroContent";
 import Navbar from "./Navbar";
 import Image from "./Image";
 
-const Hero = ({ imageUrl, imageLabel, siteTitle, navbarLinks, heroContent, headerControls }) => {
+const Hero = ({ imageUrl, imageLabel, siteTitle, navbarLinks, heroContent, headerControls, userDetails }) => {
   return (
     <header className="hero">
       <Image
@@ -13,6 +13,7 @@ const Hero = ({ imageUrl, imageLabel, siteTitle, navbarLinks, heroContent, heade
       <Navbar
         title={siteTitle}
         navbarLinks={navbarLinks}
+        userDetails={userDetails}
       />
       <HeroContent
         content={heroContent}

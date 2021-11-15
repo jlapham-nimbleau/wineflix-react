@@ -1,8 +1,6 @@
-import { userData } from "../data";
 import NavbarLink from "./NavbarLink";
 import UserAvatar from "./UserAvatar";
 
-// TODO: Don't import `userData` directly
 // TODO: How to handle initial state -- className `active`? UPDATE -- rename `isActive`
 const navbarLinks = [
   {
@@ -24,7 +22,7 @@ const navbarLinks = [
   }
 ];
 
-const Navbar = ({ title }) => {
+const Navbar = ({ title, userDetails }) => {
   return (
     <nav className="navigation">
       <section className="primary-navigation">
@@ -36,7 +34,7 @@ const Navbar = ({ title }) => {
         </ul>
       </section>
       <section className="secondary-navigation">
-        <UserAvatar user={userData} />
+        <UserAvatar userDetails={userDetails} />
       </section>
     </nav>
   )
