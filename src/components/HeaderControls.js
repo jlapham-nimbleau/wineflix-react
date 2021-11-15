@@ -3,12 +3,12 @@ import HeaderControl from "./HeaderControl"
 const HeaderControls = ({ controls }) => {
   return (
     <ul className="controls">
-      {controls.map((item, index) => (
+      {controls.map((control, index) => (
         <HeaderControl
-          key={`${index}-${item.text}`}
-          className={item.className}
-          text={item.text}
-          iconImg={item.iconImg}
+          key={`${index}-${control.text}`}
+          className={control.className}
+          text={control.text}
+          iconImg={control.iconImg}
         />
       ))}
     </ul>
