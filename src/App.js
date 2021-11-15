@@ -17,7 +17,7 @@ const App = () => {
       <main>
         {categories.map((category, index) => (
           <Category
-            key={index}
+            key={`${index}-${category.title}`}
             category={category}
           />
         ))}
