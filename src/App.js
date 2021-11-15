@@ -15,9 +15,12 @@ const App = () => {
         headerControls={headerControls}
       />
       <main>
-        {categories.map((category) => (
-          <Category title={category.title}
-            data={category.data} />
+        {categories.map((category, index) => (
+          <Category
+            key={index}
+            title={category.title}
+            data={category.data}
+          />
         ))}
       </main>
     </div>

@@ -5,8 +5,11 @@ const Category = ({ title, data }) => {
     <section className="category">
       <h2>{title}</h2>
       <ul>
-        {data.map((item) => (
-          <CategoryItem item={item} />
+        {data.map((item, index) => (
+          <CategoryItem
+            key={index}
+            item={item}
+          />
         ))}
       </ul>
     </section>
