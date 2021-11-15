@@ -100,27 +100,6 @@ const heroContent = {
   as hell.  Experience the unapologetic flavor burst of Rex Goliath.`,
 };
 
-// TODO: How to handle initial state -- className `active`?
-const navbarLinks = [
-  {
-    url: "https://developer.mozilla.org",
-    title: "Home",
-    className: "active"
-  },
-  {
-    url: "https://developer.mozilla.org",
-    title: "Whites"
-  },
-  {
-    url: "https://developer.mozilla.org",
-    title: "Reds"
-  },
-  {
-    url: "https://developer.mozilla.org",
-    title: "Blends"
-  }
-];
-
 // TODO: This should probably be in `state`
 const userData = {
   url: "https://developer.mozilla.org",
@@ -156,7 +135,6 @@ export {
   wines,
   heroHeaderContent,
   heroContent,
-  navbarLinks,
   userData,
   categories,
   headerControls,

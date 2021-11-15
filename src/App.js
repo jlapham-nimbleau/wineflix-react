@@ -1,5 +1,5 @@
 import "./App.css";
-import { siteTitle, heroHeaderContent, heroContent, navbarLinks, categories, headerControls } from "./data";
+import { siteTitle, heroHeaderContent, heroContent, categories, headerControls } from "./data";
 import Category from "./components/Category";
 import Hero from "./components/Hero";
 
@@ -10,7 +10,6 @@ const App = () => {
         imageUrl={heroHeaderContent.imageUrl}
         imageLabel={heroHeaderContent.imageLabel}
         siteTitle={siteTitle}
-        navbarLinks={navbarLinks}
         heroContent={heroContent}
         headerControls={headerControls}
       />
