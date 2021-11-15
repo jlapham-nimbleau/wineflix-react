@@ -5,7 +5,7 @@ const Category = ({ title, data }) => {
     <section className="category">
       <h2>{title}</h2>
       <ul>
-        {data.map((item, index) => (
+        {category.map((item, index) => (
           <CategoryItem
             key={index}
             item={item}
