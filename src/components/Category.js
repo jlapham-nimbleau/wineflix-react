@@ -9,7 +9,7 @@ const Category = ({ category }) => {
       <ul>
         {items.map((item, index) => (
           <CategoryItem
-            key={index}
+            key={`${index}-${item.id}`}
             item={item}
           />
         ))}
