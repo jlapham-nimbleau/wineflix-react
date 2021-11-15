@@ -14,7 +14,7 @@ const Navbar = ({ title, data }) => {
         </ul>
       </section>
       <section className="secondary-navigation">
-        <UserAvatar userData={userData} />
+        <UserAvatar user={userData} />
       </section>
     </nav>
   )

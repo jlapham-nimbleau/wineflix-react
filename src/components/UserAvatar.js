@@ -1,7 +1,9 @@
-const UserAvatar = ({ userData }) => {
+const UserAvatar = ({ user }) => {
+  const { url, username } = user;
+
   return (
     <span className="user-avatar">
-      <a href={userData.url}>{userData.username}</a>
+      <a href={url}>{username}</a>
     </span>
   )
 }
