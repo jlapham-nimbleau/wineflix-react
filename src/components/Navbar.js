@@ -2,13 +2,13 @@ import { userData } from "../data";
 import NavbarLink from "./NavbarLink";
 import UserAvatar from "./UserAvatar";
 
-const Navbar = ({ title, data }) => {
+const Navbar = ({ title, navbarLinks }) => {
   return (
     <nav className="navigation">
       <section className="primary-navigation">
         <h1>{title}</h1>
         <ul className="navigation-links">
-          {data.map((item) => (
+          {navbarLinks.map((item) => (
             <NavbarLink item={item} />
           ))}
         </ul>

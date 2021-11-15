@@ -12,7 +12,7 @@ const Hero = ({ imageUrl, imageLabel, siteTitle, navbarLinks, heroContent, heade
       />
       <Navbar
         title={siteTitle}
-        data={navbarLinks}
+        navbarLinks={navbarLinks}
       />
       <HeroContent
         content={heroContent}
