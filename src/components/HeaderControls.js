@@ -5,7 +5,7 @@ const HeaderControls = ({ controls }) => {
     <ul className="controls">
       {controls.map((item, index) => (
         <HeaderControl
-          key={index}
+          key={`${index}-${item.text}`}
           className={item.className}
           text={item.text}
           iconImg={item.iconImg}
