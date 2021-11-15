@@ -1,9 +1,9 @@
 import HeaderControl from "./HeaderControl"
 
-const HeaderControls = ({ data }) => {
+const HeaderControls = ({ controls }) => {
   return (
     <ul className="controls">
-      {data.map((item, index) => (
+      {controls.map((item, index) => (
         <HeaderControl
           key={index}
           className={item.className}

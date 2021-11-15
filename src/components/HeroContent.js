@@ -10,7 +10,7 @@ const HeroContent = ({ data, headerControlsData }) => {
       <p>
         {data.description}
       </p>
-      <HeaderControls data={headerControlsData} />
+      <HeaderControls controls={headerControlsData} />
     </div>
   )
 }
