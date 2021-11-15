@@ -1,6 +1,6 @@
 import HeaderControls from "./HeaderControls";
 
-const HeroContent = ({ content, headerControlsData }) => {
+const HeroContent = ({ content, headerControls }) => {
   const { title, imageUrl, subtitle, description } = content;
 
   return (
@@ -12,7 +12,7 @@ const HeroContent = ({ content, headerControlsData }) => {
       <p>
         {description}
       </p>
-      <HeaderControls controls={headerControlsData} />
+      <HeaderControls controls={headerControls} />
     </div>
   )
 }

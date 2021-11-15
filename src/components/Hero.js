@@ -16,7 +16,7 @@ const Hero = ({ imageUrl, imageLabel, siteTitle, navbarLinks, heroContent, heade
       />
       <HeroContent
         content={heroContent}
-        headerControlsData={headerControls}
+        headerControls={headerControls}
       />
     </header>
   )
