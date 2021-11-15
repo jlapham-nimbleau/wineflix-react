@@ -109,11 +109,11 @@ const userData = {
 const categories = [
   {
     title: "Drink Again",
-    items: wines.filter(wine => wine.isFinished === true),
+    items: wines.filter(wine => wine.isFinished),
   },
   {
     title: "Keep Drinking",
-    items: wines.filter(wine => wine.progress !== undefined),
+    items: wines.filter(wine => !!wine.progress),
   }
 ]
 
