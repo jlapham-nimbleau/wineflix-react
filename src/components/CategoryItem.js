@@ -1,16 +1,18 @@
 const CategoryItem = ({ item }) => {
+  const { label, imageUrl, isNew, progress } = item;
+
   return (
     <li>
-      <div className={item.label.toLowerCase()}>
-        <img src={item.imageUrl} alt={item.label} />
+      <div className={label.toLowerCase()}>
+        <img src={imageUrl} alt={label} />
 
-        {item.isNew &&
+        {isNew &&
           <span className="new-badge">New!</span>
         }
 
-        {item.progress &&
+        {progress &&
           <div className="amount-consumed">
-            <progress min="0" max="100" value={item.progress}></progress>
+            <progress min="0" max="100" value={progress}></progress>
           </div>
         }
       </div>
