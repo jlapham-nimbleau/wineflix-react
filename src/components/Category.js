@@ -1,11 +1,13 @@
 import CategoryItem from "./CategoryItem";
 
-const Category = ({ title, data }) => {
+const Category = ({ category }) => {
+  const { title, items } = category;
+
   return (
     <section className="category">
       <h2>{title}</h2>
       <ul>
-        {category.map((item, index) => (
+        {items.map((item, index) => (
           <CategoryItem
             key={index}
             item={item}
